@@ -1,0 +1,34 @@
+<!-- <div class="search-container">
+  <form class="search-form" #form="ngForm" (ngSubmit)="onSubmit(form)">
+    <span class="logo" routerLink="/">Games Database</span>
+    <input
+      class="search-input"
+      name="search"
+      ngModel
+      placeholder="Search 500,000+ games"
+    />
+    <button class="search-button">Search</button>
+  </form>
+</div> -->
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">GAME DATABASE</a>
+    <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <form class="d-flex m-auto" #form="ngForm" (ngSubmit)="onSubmit(form)">
+        <input ngModel class="form-control me-3" id="exampleDataList" list="datalistOptions" name="search" placeholder="Search 500,000+ games">
+        <datalist id="datalistOptions">
+          <option value="GTA">
+          <option value="IGI">
+          <option value="Call Of Duty">
+          <option value="Battlefield">
+          <option value="Need For Speed">
+        </datalist>
+        <button class="btn btn-outline-success">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
